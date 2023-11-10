@@ -11,12 +11,28 @@
     <div class="grid md:grid-cols-3">
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
-          <div>
+          <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
               <a class="hover:text-gray-700" href="/">Food Ninja</a>
             </h1>
+            <div class="px-4 cursor pointer md:hidden" id="burger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul class="text-sm mt-6">
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
             <li class="text-gray-700 font-bold py-1">
               <a
                 href="/"
@@ -85,12 +101,12 @@
         <div class="flex justify-center md:justify-end">
           <a
             href="#"
-            class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
+            class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
             >Log in</a
           >
           <a
             href="#"
-            class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white"
+            class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
             >Sign up</a
           >
         </div>
@@ -205,7 +221,7 @@
 
           <div class="flex justify-center">
             <div
-              class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner"
+              class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
             >
               Load more
             </div>
@@ -213,5 +229,7 @@
         </div>
       </main>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
