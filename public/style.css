@@ -861,6 +861,18 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-11{
+    grid-column: span 11 / span 11;
+  }
+
+  .md\:col-span-8{
+    grid-column: span 8 / span 8;
+  }
+
   .md\:block{
     display: block;
   }
@@ -875,6 +887,18 @@ video {
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-9{
+    grid-template-columns: repeat(9, minmax(0, 1fr));
   }
 
   .md\:justify-end{
