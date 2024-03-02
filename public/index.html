@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Order App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF6363",
+              secondary: {
+                100: "#E2E2D5",
+                200: "#888883",
+              },
+            },
+            fontFamily: {
+              body: ["Nunito"],
+            },
+          },
+        },
+      };
+    </script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="text-gray-600 font-body">
